@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %> - Chemond</title>
-    <link rel="icon" href="../assets/images/chemond-logo.ico" type="image/x-icon"> <!-- Adjust path if necessary -->
+    <title><%= title %> - My Sadari</title>
+    <link rel="icon" href="../assets/images/mysadari-logo.ico" type="image/x-icon"> <!-- Adjust path if necessary -->
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -30,22 +30,22 @@
                         </div>
 
                         <!-- Dynamic Titles -->
-                        <h1 class="card-title text-primary">Chemond</h1>
+                        <h1 class="card-title text-primary">My Sadari</h1>
                         <% if (status === 'success') { %>
                             <h1 class="card-title text-success">Konfirmasi Email Berhasil</h1>
-                            <p class="card-text mt-4">Selamat, email Anda berhasil dikonfirmasi. Anda sekarang dapat masuk ke aplikasi Chemond.</p>
+                            <p class="card-text mt-4">Selamat, email Anda berhasil dikonfirmasi. Anda sekarang dapat masuk ke aplikasi My Sadari.</p>
                         <% } else if (status === 'failed') { %>
                             <h1 class="card-title text-danger">Konfirmasi Email Gagal</h1>
                             <p class="card-text mt-4">Maaf, tautan konfirmasi tidak valid atau telah kedaluwarsa.</p>
                         <% } else if (status === 'already_verified') { %>
                             <h1 class="card-title text-warning">Email Sudah Terkonfirmasi</h1>
-                            <p class="card-text mt-4">Email ini sudah terkonfirmasi sebelumnya. Anda dapat langsung masuk ke aplikasi Chemond.</p>
+                            <p class="card-text mt-4">Email ini sudah terkonfirmasi sebelumnya. Anda dapat langsung masuk ke aplikasi My Sadari.</p>
                         <% } %>
 
                         <!-- Button to App -->
-                        <a href="intent://chemond.app#Intent;scheme=https;package=com.chemond.app;end"
+                        <a href="intent://mysadari.app#Intent;scheme=https;package=com.mysadari.app;end"
                             class="btn btn-primary mt-3">
-                            Masuk ke Aplikasi Chemond
+                            Masuk ke Aplikasi My Sadari
                         </a>
                     </div>
                 </div>
