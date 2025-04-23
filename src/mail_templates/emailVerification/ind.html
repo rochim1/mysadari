@@ -1,0 +1,57 @@
+<!-- emailTemplate.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifikasi Email</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333333;
+    }
+    p {
+      color: #555555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Verifikasi Alamat Email Anda</h1>
+    <p>Halo {{name}},</p>
+    <p>Terima kasih telah mendaftar di Chemond. Silakan verifikasi alamat email Anda dengan mengklik tombol di bawah ini:</p>
+    <a href="{{verificationLink}}" class="btn">Verifikasi Email</a>
+    <p>Jika Anda tidak mendaftar untuk akun ini, harap abaikan email ini.</p>
+    <p class="footer">© 2024 Perusahaan Anda. Semua hak dilindungi.</p>
+  </div>
+</body>
+</html>

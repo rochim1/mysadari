@@ -1,0 +1,11 @@
+// to generate migrateion
+npx sequelize-cli migration:generate --name table_user
+
+// to run migration
+npx sequelize-cli db:migrate
+
+// to generate seeder
+npx sequelize-cli seed:generate --name demo-user
+
+// to run seeder
+npx sequelize-cli db:seed:all

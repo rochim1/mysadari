@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Success</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333333;
+    }
+    p {
+      color: #555555;
+      line-height: 1.6; /* Slightly increased line height for better readability */
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #eeeeee;
+      margin: 20px 0;
+    }
+    .footer {
+      font-size: 12px;
+      color: #888888;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Success</h1>
+    <p>Hello {{name}},</p>
+    <p>Thank you for registering at Chemond. You have been automatically logged in using this email.</p>
+    <p>For security purposes, please update your password and profile after logging into the application.</p>
+    <p>Your current password is: {{password}}</p>
+    <!-- <a href="{{updateProfileLink}}" class="btn">Update Profile</a> -->
+    <hr>
+    <p class="footer">© 2024 Chemond. All rights reserved.</p>
+  </div>
+</body>
+</html>

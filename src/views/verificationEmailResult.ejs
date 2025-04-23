@@ -1,0 +1,60 @@
+<!-- emailVerification.ejs -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> - Chemond</title>
+    <link rel="icon" href="../assets/images/chemond-logo.ico" type="image/x-icon"> <!-- Adjust path if necessary -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card text-center shadow-lg">
+                    <div class="card-body p-5">
+                        <!-- Dynamic Icon and Message -->
+                        <div class="mb-4">
+                            <% if (status === 'success') { %>
+                                <i class="fas fa-check-circle text-success fa-4x"></i>
+                            <% } else if (status === 'failed') { %>
+                                <i class="fas fa-exclamation-circle text-danger fa-4x"></i>
+                            <% } else if (status === 'already_verified') { %>
+                                <i class="fas fa-info-circle text-warning fa-4x"></i>
+                            <% } %>
+                        </div>
+
+                        <!-- Dynamic Titles -->
+                        <h1 class="card-title text-primary">Chemond</h1>
+                        <% if (status === 'success') { %>
+                            <h1 class="card-title text-success">Konfirmasi Email Berhasil</h1>
+                            <p class="card-text mt-4">Selamat, email Anda berhasil dikonfirmasi. Anda sekarang dapat masuk ke aplikasi Chemond.</p>
+                        <% } else if (status === 'failed') { %>
+                            <h1 class="card-title text-danger">Konfirmasi Email Gagal</h1>
+                            <p class="card-text mt-4">Maaf, tautan konfirmasi tidak valid atau telah kedaluwarsa.</p>
+                        <% } else if (status === 'already_verified') { %>
+                            <h1 class="card-title text-warning">Email Sudah Terkonfirmasi</h1>
+                            <p class="card-text mt-4">Email ini sudah terkonfirmasi sebelumnya. Anda dapat langsung masuk ke aplikasi Chemond.</p>
+                        <% } %>
+
+                        <!-- Button to App -->
+                        <a href="intent://chemond.app#Intent;scheme=https;package=com.chemond.app;end"
+                            class="btn btn-primary mt-3">
+                            Masuk ke Aplikasi Chemond
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional for interactions) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
